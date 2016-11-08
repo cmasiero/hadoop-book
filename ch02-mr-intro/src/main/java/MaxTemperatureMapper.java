@@ -15,7 +15,11 @@ public class MaxTemperatureMapper
   @Override
   public void map(LongWritable key, Text value, Context context)
       throws IOException, InterruptedException {
-    
+
+
+    System.out.println("[MaxTemperatureMapper:map] " + key + " " + value.toString());
+
+
     String line = value.toString();
     String year = line.substring(15, 19);
     int airTemperature;
