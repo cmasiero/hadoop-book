@@ -32,4 +32,4 @@ echo "Execute jar ..."
 hadoop jar ././target/ch02-mr-intro-4.0.jar MaxTemperature /user/cristiano/ncdc/input/sample.txt ncdc/output
 
 
-echo "When you finish test shutdown hadoop via bash : /opt/hadoop-2.7.2/sbin/stop-dfs.sh"
+echo "When tests end, shutdown hadoop via bash : " $HADOOP_HOME "/sbin/stop-dfs.sh"
